@@ -1,2 +1,0 @@
-# hmo
-Help Me Out

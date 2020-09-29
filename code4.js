@@ -228,22 +228,7 @@ gdjs.GameLevel4Code.condition0IsTrue_0.val = false;
 {
 gdjs.GameLevel4Code.condition0IsTrue_0.val = gdjs.evtTools.systemInfo.isMobile();
 }if (gdjs.GameLevel4Code.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("DownOnscreen"), gdjs.GameLevel4Code.GDDownOnscreenObjects4);
-gdjs.copyArray(runtimeScene.getObjects("LeftOnscreen"), gdjs.GameLevel4Code.GDLeftOnscreenObjects4);
-gdjs.copyArray(runtimeScene.getObjects("RightOnscreen"), gdjs.GameLevel4Code.GDRightOnscreenObjects4);
-gdjs.copyArray(runtimeScene.getObjects("UpOnscreen"), gdjs.GameLevel4Code.GDUpOnscreenObjects4);
-{for(var i = 0, len = gdjs.GameLevel4Code.GDUpOnscreenObjects4.length ;i < len;++i) {
-    gdjs.GameLevel4Code.GDUpOnscreenObjects4[i].hide(false);
-}
-for(var i = 0, len = gdjs.GameLevel4Code.GDDownOnscreenObjects4.length ;i < len;++i) {
-    gdjs.GameLevel4Code.GDDownOnscreenObjects4[i].hide(false);
-}
-for(var i = 0, len = gdjs.GameLevel4Code.GDLeftOnscreenObjects4.length ;i < len;++i) {
-    gdjs.GameLevel4Code.GDLeftOnscreenObjects4[i].hide(false);
-}
-for(var i = 0, len = gdjs.GameLevel4Code.GDRightOnscreenObjects4.length ;i < len;++i) {
-    gdjs.GameLevel4Code.GDRightOnscreenObjects4[i].hide(false);
-}
+{gdjs.evtTools.camera.showLayer(runtimeScene, "Button Layer");
 }}
 
 }
@@ -904,6 +889,7 @@ gdjs.copyArray(runtimeScene.getObjects("Pemain"), gdjs.GameLevel4Code.GDPemainOb
     gdjs.GameLevel4Code.GDPemainObjects2[i].returnVariable(gdjs.GameLevel4Code.GDPemainObjects2[i].getVariables().getFromIndex(0)).setNumber(0);
 }
 }{gdjs.evtTools.camera.hideLayer(runtimeScene, "Result Layer");
+}{gdjs.evtTools.camera.hideLayer(runtimeScene, "Button Layer");
 }}
 
 }
